@@ -66,7 +66,7 @@ Models were evaluated on the test set using RMSE and MAE:
 
 ---
 
-## 6. Future Forecast 🔮
+## 6. Future Forecast 
 
 * The best-performing **XGBoost model** was re-trained on the *entire* dataset.
 * An iterative prediction process was used to generate forecasts for the next **12 months** (Sep 2025 - Aug 2026), using predicted values to update future lag features (assuming exogenous variables remain constant).
