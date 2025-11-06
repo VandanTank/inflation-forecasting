@@ -1,12 +1,12 @@
 # Advanced Time Series Forecasting of U.S. Inflation using SARIMA, ETS, and XGBoost Models
 
-## 1. Project Objective 🎯
+## 1. Project Objective 
 
 This project implements and evaluates multiple time series models for forecasting the **U.S. inflation rate**. The primary goal is to leverage historical Consumer Price Index (CPI) data to generate reliable short-term inflation predictions, comparing the efficacy of **Seasonal Autoregressive Integrated Moving Average (SARIMA/SARIMAX)**, **Exponential Smoothing (ETS)**, and **XGBoost** methodologies. This work demonstrates proficiency in end-to-end time series analysis, including data acquisition, feature engineering, model selection, diagnostics, comparative evaluation, and forecasting.
 
 ---
 
-## 2. Data Acquisition and Preparation 📊
+## 2. Data Acquisition and Preparation 
 
 * **Data Source:** Federal Reserve Economic Data (FRED) database (`pandas-datareader`).
 * **Target Series:** `CPIAUCSL` (U.S. CPI, All Urban Consumers, All Items, SA).
@@ -20,14 +20,14 @@ This project implements and evaluates multiple time series models for forecastin
 
 ---
 
-## 3. Exploratory Data Analysis (EDA) 📈
+## 3. Exploratory Data Analysis (EDA) 
 
 * Visualized the long-term YoY inflation rate (1961-Present) to identify trends, seasonality, and periods of volatility (e.g., 1970s energy crisis, 2009 recession, post-2020 surge). This informed the need for models capable of handling non-stationarity and seasonality.
     ``
 
 ---
 
-## 4. Modeling Methodology 🛠️
+## 4. Modeling Methodology 
 
 ### 4.1. Train/Test Split
 
@@ -50,7 +50,7 @@ This project implements and evaluates multiple time series models for forecastin
 
 ---
 
-## 5. Evaluation and Results 🎯
+## 5. Evaluation and Results 
 
 Models were evaluated on the test set using RMSE and MAE:
 
@@ -75,7 +75,7 @@ Models were evaluated on the test set using RMSE and MAE:
 
 ---
 
-## 7. Technologies Used 💻
+## 7. Technologies Used 
 
 * **Language:** Python 3.10
 * **Core Libraries:**
@@ -90,7 +90,7 @@ Models were evaluated on the test set using RMSE and MAE:
 
 ---
 
-## 8. Potential Future Work 🚀
+## 8. Potential Future Work 
 
 * **Advanced Feature Engineering:** Incorporate more sophisticated time-based features (e.g., cyclical features, interaction terms).
 * **Hyperparameter Tuning:** Optimize XGBoost (and potentially SARIMA/ETS) parameters using GridSearchCV or RandomizedSearchCV.
@@ -100,7 +100,7 @@ Models were evaluated on the test set using RMSE and MAE:
 
 ---
 
-## 9. How to Run ▶️
+## 9. How to Run 
 
 1.  Clone this repository: `git clone [Your Repository URL]`
 2.  Navigate to the project directory: `cd inflation-forecasting`
