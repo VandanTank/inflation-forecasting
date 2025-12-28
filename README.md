@@ -23,7 +23,6 @@ This project implements and evaluates multiple time series models for forecastin
 ## 3. Exploratory Data Analysis (EDA) 
 
 * Visualized the long-term YoY inflation rate (1961-Present) to identify trends, seasonality, and periods of volatility (e.g., 1970s energy crisis, 2009 recession, post-2020 surge). This informed the need for models capable of handling non-stationarity and seasonality.
-    ``
 
 ---
 
@@ -62,7 +61,7 @@ Models were evaluated on the test set using RMSE and MAE:
 | XGBoost | **0.4970** | **0.3668** | Significantly outperformed statistical models. |
 
 * **Discussion:** The **XGBoost model demonstrated substantially better performance** on the test set, particularly in tracking the volatile post-2020 period. This highlights the advantage of feature engineering (lags) and machine learning algorithms for capturing complex dynamics in economic time series, especially during periods of structural change.
-    ``
+    
 
 ---
 
@@ -71,7 +70,7 @@ Models were evaluated on the test set using RMSE and MAE:
 * The best-performing **XGBoost model** was re-trained on the *entire* dataset.
 * An iterative prediction process was used to generate forecasts for the next **12 months** (Sep 2025 - Aug 2026), using predicted values to update future lag features (assuming exogenous variables remain constant).
 * **Result:** The XGBoost model predicts inflation **to quickly stabilize and remain consistently around 2.86-2.88% over the next year.**
-    ``
+    
 
 ---
 
